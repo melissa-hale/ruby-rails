@@ -1,1 +1,1 @@
-web: "rake db:migrate && bin/rails server -b '::' -p ${PORT:-3000}"
+web: /bin/bash -l -c "bundle exec puma -C config/puma.rb"
