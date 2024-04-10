@@ -6,7 +6,7 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
-  config.hosts << "rails-production-c5ce.up.railway.app"
+  config.hosts << ENV["RAILWAY_PUBLIC_DOMAIN"]
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
